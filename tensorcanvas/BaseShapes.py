@@ -10,7 +10,7 @@ def make_uv(t):
   uvy = ep.expand_dims(ep.arange(t, 0.0, t.shape[0], 1), axis=0).tile([t.shape[1],1]).transpose()
   return uvx, uvy
 
-def draw_circle(xp, yp, radius, color, t):
+def draw_circle(xp, yp, radius, color, t, delta=0.75):
   '''
   Draws a circle onto an image tensor. All units are in pixels
   Parameters:
@@ -18,6 +18,7 @@ def draw_circle(xp, yp, radius, color, t):
     yp: y position
     radius: circle radius
     color: rgb color tensor with shape (3,) and values in the range 0.0-1.0
+    delta (optional): blending distance
   Returns:
     tensor with circle drawn onto it
   '''
@@ -25,7 +26,6 @@ def draw_circle(xp, yp, radius, color, t):
     t = t.permute(1, 2, 0)
   t = ep.astensor(t)
   uvx, uvy = make_uv(t)
-  print(uvx.dtype)
   dist = ((xp-uvx)**2.0 + (yp-uvy)**2.0 + 1.0).sqrt()
   delta = 0.75
   msk = ep.clip((dist-(radius-delta)) / (2.0*delta), 0.0, 1.0)

@@ -5,13 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tensor-canvas",
-    version="0.1",
+    version="0.1.7",
     author="Peter Whidden",
     author_email="all.cows.like.to.moo@gmail.com",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pwhiddy/tensor-canvas",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'eagerpy',
+        'torch'
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
