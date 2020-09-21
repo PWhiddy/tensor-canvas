@@ -1,6 +1,7 @@
 
 # Tensor Canvas 🎨  
 [![PyPI version](https://badge.fury.io/py/tensor-canvas.svg)](https://badge.fury.io/py/tensor-canvas)  
+  
 A 2D graphics library for drawing directly onto tensors.  
 Uses [eagerpy](https://github.com/jonasrauber/eagerpy) to support a uniform API for pytorch, tensorflow, jax, and numpy backends.
 Tensor Canvas uses SDF representations for easy implementation in gpu-accelerated frameworks.  
@@ -63,4 +64,4 @@ assert(np.allclose(np_canvas, jx_canvas, atol=1e-6))
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PWhiddy/TensorCanvasDemo/blob/master/TensorCanvasDemo.ipynb)  
   
-<img src="https://i.imgur.com/sspmxHa.png" width="408" height="477">
+<img src="https://i.imgur.com/sspmxHa.png" width="653" height="763">
