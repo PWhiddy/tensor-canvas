@@ -1,4 +1,5 @@
-import eagerpy
+import eagerpy as ep
+import torch
 
 def make_uv(t):
   '''
