@@ -4,6 +4,7 @@
   
 Tensor Canvas provides a standard API for 2D rendering directly onto tensors with pytorch, tensorflow, jax, and numpy.
 SDF representations are used to implement rendering in these gpu-accelerated frameworks, which is inefficient compared to normal gpu rasterization but much more predictable than matplotlib. Integration with ML frameworks also means that it is fully-differentiable. Cross-framework support is possible thanks to the [eagerpy](https://github.com/jonasrauber/eagerpy) library.  
+  
 Currently only cirlces are supported, but it is straightforward to port [any 2D SDF](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm).
 
 ### Installation  
