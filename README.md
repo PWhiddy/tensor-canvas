@@ -2,9 +2,8 @@
 # Tensor Canvas 🎨  
 [![PyPI version](https://badge.fury.io/py/tensor-canvas.svg)](https://badge.fury.io/py/tensor-canvas)  
   
-A 2D graphics library for drawing directly onto tensors.  
-Uses [eagerpy](https://github.com/jonasrauber/eagerpy) to support a uniform API for pytorch, tensorflow, jax, and numpy backends.
-Tensor Canvas uses SDF representations for easy implementation in gpu-accelerated frameworks. This method is inefficient compared to normal gpu rasterization, but much better than matplotlib. Integration with ML frameworks also means that it is fully-differentiable.  
+Tensor Canvas provides a standard API for 2D rendering directly onto tensors with pytorch, tensorflow, jax, and numpy.
+SDF representations are used to implement rendering in these gpu-accelerated frameworks, which is inefficient compared to normal gpu rasterization but much more predictable than matplotlib. Integration with ML frameworks also means that it is fully-differentiable. Cross-framework support is possible thanks to the [eagerpy](https://github.com/jonasrauber/eagerpy) library.  
 Currently only cirlces are supported, but it is straightforward to port [any 2D SDF](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm).
 
 ### Installation  
