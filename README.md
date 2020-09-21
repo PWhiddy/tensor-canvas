@@ -1,7 +1,4 @@
-.. raw:: html
-
-.. image:: https://badge.fury.io/py/eagerpy.svg
-   :target: https://badge.fury.io/py/eagerpy
+[![PyPI version](https://badge.fury.io/py/tensor-canvas.svg)](https://badge.fury.io/py/tensor-canvas)
 
 # Tensor Canvas 🎨
 ----------------
@@ -67,4 +64,4 @@ assert(np.allclose(np_canvas, jx_canvas, atol=1e-6))
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PWhiddy/TensorCanvasDemo/blob/master/TensorCanvasDemo.ipynb)  
   
-![Preview](https://i.imgur.com/sspmxHa.png)
+![Preview](https://i.imgur.com/sspmxHa.png | width=350)
