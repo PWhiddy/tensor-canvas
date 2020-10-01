@@ -39,4 +39,13 @@ def draw_circle(xp, yp, radius, color, t, delta=0.75):
   return t
 
 def draw_line(x1, y1, x2, y2, radius, color):
+  '''
+  iq's implementation
+  float sdSegment( in vec2 p, in vec2 a, in vec2 b )
+  {
+      vec2 pa = p-a, ba = b-a;
+      float h = clamp( dot(pa,ba)/dot(ba,ba), 0.0, 1.0 );
+      return length( pa - ba*h );
+  }
+  '''
   raise NotImplementedError
