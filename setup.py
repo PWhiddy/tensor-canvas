@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tensor-canvas",
-    version="0.1.7",
+    version="0.1.8",
     author="Peter Whidden",
     author_email="all.cows.like.to.moo@gmail.com",
     long_description=long_description,
